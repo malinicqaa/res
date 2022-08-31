@@ -1,0 +1,31 @@
+import { faker } from "@faker-js/faker";
+
+faker.locale = "en_AU";
+
+class Data {
+  faker = faker;
+
+  email = faker.internet.email();
+
+  firstName = faker.name.firstName();
+
+  new_firstName = faker.name.firstName();
+
+  lastName = faker.name.lastName();
+
+  address = faker.address.streetAddress();
+
+  postcode = "12345";
+
+  password = "L0zink@";
+
+  city = faker.address.cityName();
+
+  state = "Alabama";
+
+  stateValue = "1";
+
+  phoneNumber = faker.phone.phoneNumber("+ 387 ## ### ###");
+}
+
+export default new Data();
